@@ -1,0 +1,131 @@
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  background-color: #dcdcdc;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+}
+.vertical{
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 8px;
+  padding: 8px;
+}
+.sano img{
+  width: 70%;
+}
+.aki img{
+  width: 20%;
+}
+.aki{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+  left: 15px;
+  bottom: 90px;
+}
+
+header {
+  background-color: #808080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.text-align-right {
+
+  position: fixed; /* 要素をビューポート（画面）に対して固定します */
+
+  right: 0;        /* 画面の右端に合わせます */
+
+  top: 0;          /* 画面の上端に合わせます（必要に応じて調整してください） */
+
+  text-align: right; /* テキストを右寄せにします */
+
+  z-index: 1000;     /* 他のコンテンツの上に表示されるようにします */
+/* 背景色を追加すると、視認性が向上します */
+
+  padding-right: 20px; /* 右側に余白を追加して、端に寄りすぎないようにします */
+
+  padding-top: 20px; /* 上側に余白を追加して、端に寄りすぎないようにします */
+
+}
+.kimisini{
+  text-align: center;
+}
+.text-align-right h2 {
+
+  margin: 0; /* h2 のデフォルトのマージンをリセットします */
+
+}
+ 
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  background: #ffffff;
+  padding: 15px;
+  border-left: 5px solid #000000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+img,
+select {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #eee;
+  font-size: 0.9em;
+}
+.intro-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.intro-content img {
+  max-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.rainbow {
+  animation: glowColor 2s linear infinite;
+  filter: brightness(1.4) saturate(2);
+}
+@keyframes glowColor {
+ 0% {
+    filter: hue-rotate(0deg) brightness(1.4) saturate(50);
+  }
+  100% {
+    filter: hue-rotate(360deg) brightness(1.4) saturate(50);
+  }
+}
+.sekinin {
+  color: #bebebe;
+}
+.kaiten{
+    animation: rotateAnimation 0.1s linear infinite;
+}
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
